@@ -14,7 +14,7 @@ jobs:
       - name: Invocando a Jenkins
         id: jenkins
         run: |
-          curl -X POST "http://ec2-23-22-162-149.compute-1.amazonaws.com:8080/job/ci-build-service/buildWithParameters?service_name=orders-service&image_type=test&branch_name=${{github.head_ref}}&delay=0sec" --user "admin:11e5dc717eb1a0d1d7481aaa1b8c14754f"
+          curl -X POST "http://ec2-23-22-162-149.compute-1.amazonaws.com:8080/job/ci-build-service/buildWithParameters?service_name=products-service&image_type=test&branch_name=${{github.head_ref}}&delay=0sec" --user "admin:11e5dc717eb1a0d1d7481aaa1b8c14754f"
 
       - name: Progreso
         run: |
