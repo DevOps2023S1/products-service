@@ -1,7 +1,7 @@
 version: "3"
 services:
   jenkins:
-    image: DevOps/products-service:latest
+    image: devops/products-service:latest
     container_name: products-service
     ports:
       - "8080:8080"
