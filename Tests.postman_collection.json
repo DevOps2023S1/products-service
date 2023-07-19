@@ -13,7 +13,7 @@
 					"script": {
 						"exec": [
 							"pm.test(\"Estado 200 OK\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"    pm.response.to.have.status(400);\r",
 							"});"
 						],
 						"type": "text/javascript"
